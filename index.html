@@ -3,52 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal homepage of Haoyan Xu (许颢严). Contact: 1006112909xhy@gmail.com.">
-  <title>Haoyan Xu | 许颢严</title>
+  <meta name="description" content="Haoyan Xu | Robotics, VLA, and robot learning.">
+  <title>Haoyan Xu | Robotics & VLA</title>
   <style>
-    :root { color-scheme: light; --ink: #172b43; --muted: #5a6674; --link: #165daa; --line: #dde4ec; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    a { color: var(--link); text-underline-offset: .22em; overflow-wrap: anywhere; }
-    a:hover { color: #103c6b; }
-    a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; }
-    .page { width: min(960px, 100%); margin: 0 auto; padding: 72px 32px 32px; }
-    header { padding-bottom: 28px; margin-bottom: 44px; border-bottom: 2px solid var(--ink); }
-    .eyebrow { margin: 0 0 12px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-    h1 { margin: 0; font: 500 clamp(2.5rem, 7vw, 3.5rem)/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.03em; }
-    .chinese-name { margin-top: 14px; color: var(--muted); font-size: 24px; letter-spacing: .08em; }
-    .layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 64px; }
-    h2 { font-size: 20px; margin: 0 0 16px; font-weight: 600; }
-    section { margin-bottom: 42px; }
-    p { margin: 0 0 16px; }
-    .label { display: block; margin: 24px 0 5px; font-size: 14px; color: var(--muted); }
-    .label:first-child { margin-top: 0; }
-    #affiliation:empty { display: none; }
-    footer { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-    @media (max-width: 680px) { .page { padding: 40px 24px 24px; } .layout { grid-template-columns: 1fr; gap: 36px; } header { margin-bottom: 32px; } aside { padding-bottom: 28px; border-bottom: 1px solid var(--line); } }
+    :root { --ink:#172b43; --muted:#637083; --blue:#1769aa; --line:#dbe3ec; --soft:#f5f8fb; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:#fff; font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); text-underline-offset:3px; } a:hover { color:#0c4378; } a:focus-visible { outline:3px solid #78b8eb; outline-offset:4px; }
+    .wrap { width:min(1080px,100%); margin:auto; padding:38px 32px 56px; } header { display:flex; justify-content:space-between; gap:30px; align-items:flex-end; padding-bottom:28px; border-bottom:1px solid var(--ink); }
+    .kicker { margin:0 0 10px; color:var(--muted); font-size:13px; letter-spacing:.12em; text-transform:uppercase; } h1 { margin:0; font:500 clamp(2.4rem,6vw,4rem)/1.05 Georgia,"Times New Roman",serif; letter-spacing:-.03em; } .cn { margin:10px 0 0; color:var(--muted); font-size:21px; }
+    .role { max-width:350px; margin:0; text-align:right; color:var(--muted); } .role strong { display:block; color:var(--ink); font-size:17px; font-weight:600; }
+    .grid { display:grid; grid-template-columns:220px minmax(0,1fr); gap:68px; padding-top:42px; } aside { color:var(--muted); } .label { display:block; margin:0 0 5px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; } aside p { margin:0 0 23px; } aside a { display:block; margin-bottom:8px; }
+    section { margin:0 0 46px; } h2 { margin:0 0 17px; font-size:21px; font-weight:650; } h2 span { color:var(--muted); font-weight:400; } p { margin:0 0 16px; }
+    .projects { display:grid; gap:14px; } .project { padding:17px 18px; border:1px solid var(--line); border-radius:5px; background:var(--soft); } .project h3 { margin:0 0 5px; font-size:17px; } .project p { margin:0; color:#46566a; }
+    .meta { color:var(--muted); font-size:14px; } .tags { color:var(--blue); font-size:14px; } .pub { padding:14px 0; border-top:1px solid var(--line); } .pub:last-child { border-bottom:1px solid var(--line); } .coming { color:var(--muted); font-style:italic; }
+    .tools { display:flex; flex-wrap:wrap; gap:8px; } .tool { padding:4px 9px; border:1px solid var(--line); border-radius:4px; color:#405268; font-size:14px; background:#fff; }
+    footer { margin-top:18px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media(max-width:720px){ .wrap{padding:28px 22px 42px;} header{display:block;} .role{margin-top:22px;text-align:left;} .grid{grid-template-columns:1fr;gap:28px;padding-top:30px;} aside{padding-bottom:24px;border-bottom:1px solid var(--line);} }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header><p class="eyebrow">Personal homepage</p><h1>Haoyan Xu</h1><p class="chinese-name" lang="zh-CN">许颢严</p></header>
-    <div class="layout">
-      <aside aria-label="Profile and contact">
-        <span class="label">Email</span>
-        <p><a href="mailto:1006112909xhy@gmail.com">1006112909xhy@gmail.com</a></p>
-        <span class="label">Links</span>
-        <a href="https://github.com/xu-haoyan">GitHub ↗</a>
-      </aside>
+  <div class="wrap">
+    <header><div><p class="kicker">Robotics · VLA · Sim2Real</p><h1>Haoyan Xu</h1><p class="cn" lang="zh-CN">许颢严</p></div><p class="role"><strong>VLA Algorithm Intern</strong>Robot learning, humanoid manipulation, and whole-body control</p></header>
+    <div class="grid">
+      <aside aria-label="Contact and profile links"><span class="label">Affiliation</span><p>Harbin Institute of Technology<br>Chongqing University</p><span class="label">Contact</span><p><a href="mailto:1006112909xhy@gmail.com">1006112909xhy@gmail.com</a></p><span class="label">Links</span><a href="https://github.com/xu-haoyan">GitHub ↗</a></aside>
       <main>
-        <section aria-labelledby="about">
-          <h2 id="about">About</h2>
-          <p>I am Haoyan Xu (<span lang="zh-CN">许颢严</span>). Welcome to my personal homepage.</p>
-          <!-- 填写学校：在下面的 p 标签中填入学校或单位名称，例如 <p id="affiliation">Your University</p>。 -->
-          <p id="affiliation"></p>
-          <p>Please feel free to contact me by email.</p>
-        </section>
+        <section><h2>About <span>/ 关于我</span></h2><p>I am a master's student in Electronic Information at Harbin Institute of Technology and a VLA Algorithm Intern at Roboparty.</p><p lang="zh-CN">我目前就读于哈尔滨工业大学电子信息专业硕士，并在 Roboparty 担任 VLA 算法实习生，关注机器人学习、双臂操作、全身控制与 Sim2Real。</p></section>
+        <section><h2>Selected Projects <span>/ 工程项目</span></h2><div class="projects"><article class="project"><h3>Pi05 Bimanual Manipulation</h3><p>PiPER teleoperation, dataset preparation, Pi05 fine-tuning, and closed-loop real-robot evaluation.<br lang="zh-CN"><span lang="zh-CN">PiPER 远程操作、数据集构建、Pi05 微调与真实机器人闭环评测。</span></p></article><article class="project"><h3>HIT RoboMaster Legged-Wheel RL</h3><p>End-to-end teacher-student reinforcement learning architecture for legged-wheel robot control.<br><span lang="zh-CN">面向轮足机器人控制的端到端教师-学生强化学习架构。</span></p></article><article class="project"><h3>Quadruped-Manipulator Grounding Downlead Inspection <span class="meta">· In Progress / 进行中</span></h3><p>Master's graduation project combining quadruped locomotion, arm interaction, and task-oriented visual perception for grounding downlead inspection.<br><span lang="zh-CN">硕士毕业设计，结合四足行走、机械臂交互和面向任务的视觉感知，实现接地引下线检测。</span></p></article></div></section>
+        <section><h2>Education <span>/ 教育背景</span></h2><p><strong>Harbin Institute of Technology</strong> · M.S. in Electronic Information · 2025–2027 (expected)<br lang="zh-CN"><span lang="zh-CN">哈尔滨工业大学 · 电子信息硕士 · 2025.09–2027.06（预计）</span></p><p><strong>Chongqing University</strong> · B.Eng. in Intelligent Sensing Engineering · 2021–2025<br lang="zh-CN"><span lang="zh-CN">重庆大学 · 智能感知工程本科 · 2021.09–2025.06</span></p></section>
+        <section><h2>Publication <span>/ 论文</span></h2><div class="pub"><span class="coming">Coming soon / 即将发布</span></div></section>
+        <section><h2>Tools <span>/ 技术栈</span></h2><div class="tools"><span class="tool">Python</span><span class="tool">C++</span><span class="tool">PyTorch</span><span class="tool">ROS 2</span><span class="tool">Isaac Lab</span><span class="tool">Isaac Sim</span><span class="tool">MuJoCo</span><span class="tool">GR00T</span><span class="tool">PiPER</span><span class="tool">WAM</span><span class="tool">Docker</span><span class="tool">Linux</span></div></section>
       </main>
     </div>
-    <footer>Haoyan Xu · <a href="https://github.com/xu-haoyan">GitHub</a></footer>
+    <footer>Haoyan Xu · <a href="https://github.com/xu-haoyan">GitHub</a> · <a href="mailto:1006112909xhy@gmail.com">Email</a></footer>
   </div>
 </body>
 </html>
