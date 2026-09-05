@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal homepage of Haoyan Xu (许颢严). Contact: 1006112909xhy@gmail.com.">
+  <title>Haoyan Xu | 许颢严</title>
+  <style>
+    :root { color-scheme: light; --ink: #172b43; --muted: #5a6674; --link: #165daa; --line: #dde4ec; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--link); text-underline-offset: .22em; overflow-wrap: anywhere; }
+    a:hover { color: #103c6b; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; }
+    .page { width: min(960px, 100%); margin: 0 auto; padding: 72px 32px 32px; }
+    header { padding-bottom: 28px; margin-bottom: 44px; border-bottom: 2px solid var(--ink); }
+    .eyebrow { margin: 0 0 12px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    h1 { margin: 0; font: 500 clamp(2.5rem, 7vw, 3.5rem)/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.03em; }
+    .chinese-name { margin-top: 14px; color: var(--muted); font-size: 24px; letter-spacing: .08em; }
+    .layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 64px; }
+    h2 { font-size: 20px; margin: 0 0 16px; font-weight: 600; }
+    section { margin-bottom: 42px; }
+    p { margin: 0 0 16px; }
+    .label { display: block; margin: 24px 0 5px; font-size: 14px; color: var(--muted); }
+    .label:first-child { margin-top: 0; }
+    #affiliation:empty { display: none; }
+    footer { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 680px) { .page { padding: 40px 24px 24px; } .layout { grid-template-columns: 1fr; gap: 36px; } header { margin-bottom: 32px; } aside { padding-bottom: 28px; border-bottom: 1px solid var(--line); } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header><p class="eyebrow">Personal homepage</p><h1>Haoyan Xu</h1><p class="chinese-name" lang="zh-CN">许颢严</p></header>
+    <div class="layout">
+      <aside aria-label="Profile and contact">
+        <span class="label">Email</span>
+        <p><a href="mailto:1006112909xhy@gmail.com">1006112909xhy@gmail.com</a></p>
+        <span class="label">Links</span>
+        <a href="https://github.com/xu-haoyan">GitHub ↗</a>
+      </aside>
+      <main>
+        <section aria-labelledby="about">
+          <h2 id="about">About</h2>
+          <p>I am Haoyan Xu (<span lang="zh-CN">许颢严</span>). Welcome to my personal homepage.</p>
+          <!-- 填写学校：在下面的 p 标签中填入学校或单位名称，例如 <p id="affiliation">Your University</p>。 -->
+          <p id="affiliation"></p>
+          <p>Please feel free to contact me by email.</p>
+        </section>
+      </main>
+    </div>
+    <footer>Haoyan Xu · <a href="https://github.com/xu-haoyan">GitHub</a></footer>
+  </div>
+</body>
+</html>
